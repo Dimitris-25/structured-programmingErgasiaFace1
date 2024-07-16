@@ -1,0 +1,36 @@
+package gr.aueb.cf.ch3;
+
+import java.util.Scanner;
+
+/**
+ * Nested while. To generic while trexei
+ * treis fores
+ */
+public class GenericWhileApp2NestedW {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int end = 0;
+        int step = 0;
+        int count = 0;
+        int start = 0;
+        final int TIMES =  3;
+        int i = 1;
+
+        while (i <= TIMES) {
+            count = 0;
+            System.out.println("Please insert, start, endValue and Step");
+            start = in.nextInt();
+            end  = in.nextInt();
+            step = in.nextInt();
+
+            while (start <= end) {
+                count ++;
+                start += step;
+
+            }
+            System.out.println("Iterations count: " + count);
+            i++;
+        }
+    }
+}
